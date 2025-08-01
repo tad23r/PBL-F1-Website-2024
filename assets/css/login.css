@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #282c34;
+    color: white;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1f26;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-menu.rotate {
+    transform: rotate(90deg);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #1c1f26;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    margin-top: 50px;
+    z-index:1;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Open the sidebar */
+  }
+  
+  .sidebar nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #f39c12;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1f26;
+    color: #f39c12;
+  }
+  
+  .login-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  
+  /* Login Form Section */
+  .login-section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  }
+  
+      .login-form {
+        background-color: #222;
+        padding: 40px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      }
+  
+      .login-form h2 {
+        color: #f39c12;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+  
+        .login-form input {
+          width: 100%;
+          padding: 12px;
+          margin: 10px 0;
+          border-radius: 5px;
+          border: none;
+          background-color: #333;
+          color: #fff;
+        }
+  
+        .login-form input[type="submit"] {
+          background-color: #f39c12;
+          border: none;
+          cursor: pointer;
+        }
+  
+  .login-form input[type="submit"]:hover {
+    background-color: #d97710;
+  }

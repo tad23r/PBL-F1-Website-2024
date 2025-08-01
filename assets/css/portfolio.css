@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #282c34;
+    color: white;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1f26;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-menu.rotate {
+    transform: rotate(90deg);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #1c1f26;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    margin-top: 50px;
+    z-index:1;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Open the sidebar */
+  }
+  
+  .sidebar nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #f39c12;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1f26;
+    color: #f39c12;
+  }
+/* General Section Styles */
+section {
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+section h2, section h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Biodata Section Styles */
+.bio-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bio-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.bio-card h2, .bio-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bio-card p, .bio-card ul {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.bio-card ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+}
+
+/* Team Section Styles */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1f26;
+    color: #f39c12;
+}
